@@ -7,6 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+/**
+ * @author  aleksey.n.bykov@gmail.com
+ * @version 1.0
+ * @since   2019-05-30
+ */
 @Configuration
 @EnableAspectJAutoProxy
 @ComponentScan("com.alekseybykov.examples.aop")

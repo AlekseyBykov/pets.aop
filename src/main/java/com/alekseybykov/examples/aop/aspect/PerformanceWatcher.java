@@ -5,6 +5,11 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author  aleksey.n.bykov@gmail.com
+ * @version 1.0
+ * @since   2019-05-30
+ */
 @Component
 @Aspect
 public class PerformanceWatcher {
