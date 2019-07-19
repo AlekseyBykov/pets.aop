@@ -21,7 +21,7 @@
     </properties>
 
     <name>aop</name>
-    <description>Various examples of using TestNG.</description>
+    <description>Various examples of using aspect-oriented programming for performance testing.</description>
     <url>https://alekseybykov.github.io</url>
 
     <dependencies>
