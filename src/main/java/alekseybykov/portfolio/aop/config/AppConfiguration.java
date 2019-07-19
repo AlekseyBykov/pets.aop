@@ -1,7 +1,7 @@
-package com.alekseybykov.examples.aop.config;
+package alekseybykov.portfolio.aop.config;
 
-import com.alekseybykov.examples.aop.aspect.PerformanceWatcher;
-import com.alekseybykov.examples.aop.data.Array;
+import alekseybykov.portfolio.aop.aspect.PerformanceWatcher;
+import alekseybykov.portfolio.aop.data.Array;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,8 +14,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.alekseybykov.examples.aop")
-public class AppConfig {
+@ComponentScan("alekseybykov.portfolio.aop")
+public class AppConfiguration {
 
     @Bean
     public Array array() {

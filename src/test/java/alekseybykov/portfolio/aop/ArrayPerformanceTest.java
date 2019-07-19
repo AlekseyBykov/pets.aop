@@ -1,7 +1,7 @@
-package com.alekseybykov.examples.aop;
+package alekseybykov.portfolio.aop;
 
-import com.alekseybykov.examples.aop.config.AppConfig;
-import com.alekseybykov.examples.aop.data.Array;
+import alekseybykov.portfolio.aop.config.AppConfiguration;
+import alekseybykov.portfolio.aop.data.Array;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.testng.annotations.BeforeSuite;
@@ -20,7 +20,7 @@ public class ArrayPerformanceTest {
 
     @BeforeSuite
     public void setUp() {
-        context = new AnnotationConfigApplicationContext(AppConfig.class);
+        context = new AnnotationConfigApplicationContext(AppConfiguration.class);
         array = context.getBean(Array.class);
     }
 

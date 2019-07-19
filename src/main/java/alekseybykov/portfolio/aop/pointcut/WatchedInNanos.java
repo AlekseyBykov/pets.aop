@@ -1,4 +1,4 @@
-package com.alekseybykov.examples.aop.pointcut;
+package alekseybykov.portfolio.aop.pointcut;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,7 +1,7 @@
-package com.alekseybykov.examples.aop.data;
+package alekseybykov.portfolio.aop.data;
 
-import com.alekseybykov.examples.aop.pointcut.WatchedInMillis;
-import com.alekseybykov.examples.aop.pointcut.WatchedInNanos;
+import alekseybykov.portfolio.aop.pointcut.WatchedInMillis;
+import alekseybykov.portfolio.aop.pointcut.WatchedInNanos;
 import org.springframework.stereotype.Component;
 
 /**

@@ -1,4 +1,4 @@
-package com.alekseybykov.examples.aop.aspect;
+package alekseybykov.portfolio.aop.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class PerformanceWatcher {
 
-    @Around("@annotation(com.alekseybykov.examples.aop.pointcut.WatchedInMillis)")
+    @Around("@annotation(alekseybykov.portfolio.aop.pointcut.WatchedInMillis)")
     public Object watchInMillis(ProceedingJoinPoint proceedingJoinPoint) {
         Object result = null;
         long startTime = System.currentTimeMillis();
@@ -38,7 +38,7 @@ public class PerformanceWatcher {
         return result;
     }
 
-    @Around("@annotation(com.alekseybykov.examples.aop.pointcut.WatchedInNanos)")
+    @Around("@annotation(alekseybykov.portfolio.aop.pointcut.WatchedInNanos)")
     public Object watchInNanos(ProceedingJoinPoint proceedingJoinPoint) {
         Object result = null;
         long startTime = System.nanoTime();
