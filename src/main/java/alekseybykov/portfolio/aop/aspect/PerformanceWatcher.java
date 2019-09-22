@@ -1,3 +1,6 @@
+//
+// Feel free to use these solutions in your work.
+//
 package alekseybykov.portfolio.aop.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;

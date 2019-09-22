@@ -1,3 +1,6 @@
+//
+// Feel free to use these solutions in your work.
+//
 package alekseybykov.portfolio.aop.config;
 
 import alekseybykov.portfolio.aop.aspect.PerformanceWatcher;
