@@ -1,4 +1,4 @@
-# aop
+# performance testing
 Various examples of using aspect-oriented programming for performance testing.
 
 Examples of the data structures and algorithms can be founded in the following books: 
