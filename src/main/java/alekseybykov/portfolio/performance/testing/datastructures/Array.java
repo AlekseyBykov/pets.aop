@@ -3,6 +3,10 @@
 //
 package alekseybykov.portfolio.performance.testing.datastructures;
 
+import alekseybykov.portfolio.performance.testing.pointcut.WatchedInNanos;
+
+import java.util.Arrays;
+
 /**
  * @author  aleksey.n.bykov@gmail.com
  * @version 1.0
@@ -10,18 +14,23 @@ package alekseybykov.portfolio.performance.testing.datastructures;
  */
 public class Array {
 
-    private long[] arr;
+    private long[] array;
     private int n;
 
     public Array(Integer max) {
-        arr = new long[max];
-        n = 0;
+        array = new long[max];
+        n = max-1;
+        fillArray();
+    }
+
+    private void fillArray() {
+        Arrays.fill(array, 0);
     }
 
     public boolean find(long searchKey) {
         int j;
         for(j = 0; j < n; j++) {
-            if(arr[j] == searchKey)
+            if(array[j] == searchKey)
                 break;
         }
 
@@ -29,7 +38,7 @@ public class Array {
     }
 
     public void insert(long value) {
-        arr[n] = value;
+        array[n] = value;
         n++;
     }
 
@@ -37,7 +46,7 @@ public class Array {
         int j;
 
         for(j = 0; j < n; j++) {
-            if(value == arr[j])
+            if(value == array[j])
                 break;
         }
 
@@ -45,10 +54,17 @@ public class Array {
             return false;
         } else {
             for(int k = j; k < n; k++) {
-                arr[k] = arr[k + 1];
+                array[k] = array[k + 1];
             }
             n--;
             return true;
         }
+    }
+
+    @WatchedInNanos
+    public void swapElements(int i, int j) {
+        long temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
