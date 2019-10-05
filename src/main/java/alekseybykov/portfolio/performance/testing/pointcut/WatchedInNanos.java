@@ -1,7 +1,7 @@
 //
 // Feel free to use these solutions in your work.
 //
-package alekseybykov.portfolio.aop.pointcut;
+package alekseybykov.portfolio.performance.testing.pointcut;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

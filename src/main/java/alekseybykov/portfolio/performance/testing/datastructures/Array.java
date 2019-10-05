@@ -1,18 +1,13 @@
 //
 // Feel free to use these solutions in your work.
 //
-package alekseybykov.portfolio.aop.data;
-
-import alekseybykov.portfolio.aop.pointcut.WatchedInMillis;
-import alekseybykov.portfolio.aop.pointcut.WatchedInNanos;
-import org.springframework.stereotype.Component;
+package alekseybykov.portfolio.performance.testing.datastructures;
 
 /**
  * @author  aleksey.n.bykov@gmail.com
  * @version 1.0
  * @since   2019-05-30
  */
-@Component
 public class Array {
 
     private long[] arr;
@@ -23,7 +18,6 @@ public class Array {
         n = 0;
     }
 
-    @WatchedInMillis
     public boolean find(long searchKey) {
         int j;
         for(j = 0; j < n; j++) {
@@ -34,13 +28,11 @@ public class Array {
         return j != n;
     }
 
-    @WatchedInNanos
     public void insert(long value) {
         arr[n] = value;
         n++;
     }
 
-    @WatchedInMillis
     public boolean delete(long value) {
         int j;
 
