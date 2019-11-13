@@ -1,6 +1,3 @@
-//
-// Feel free to use these solutions in your work.
-//
 package alekseybykov.portfolio.performance.testing;
 
 import alekseybykov.portfolio.performance.testing.algorithms.sort.Sort;
@@ -11,11 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * @author  aleksey.n.bykov@gmail.com
- * @version 1.0
- * @since   2019-05-10
- */
 @DisplayName("Testing the selection sorting algorithm, O(n^2)")
 @SpringBootTest(classes = {SelectionSortConfig.class, PerformanceWatcherConfig.class})
 class SelectionSortTest {

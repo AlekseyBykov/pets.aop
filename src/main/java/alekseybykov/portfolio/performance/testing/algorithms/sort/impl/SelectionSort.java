@@ -3,11 +3,6 @@ package alekseybykov.portfolio.performance.testing.algorithms.sort.impl;
 import alekseybykov.portfolio.performance.testing.algorithms.sort.Sort;
 import alekseybykov.portfolio.performance.testing.pointcut.WatchedInMillis;
 
-/**
- * @author  aleksey.n.bykov@gmail.com
- * @version 1.0
- * @since   2019-10-05
- */
 public class SelectionSort implements Sort {
 
     private int[] array;

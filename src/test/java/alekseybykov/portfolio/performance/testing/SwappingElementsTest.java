@@ -1,6 +1,3 @@
-//
-// Feel free to use these solutions in your work.
-//
 package alekseybykov.portfolio.performance.testing;
 
 import alekseybykov.portfolio.performance.testing.config.ArrayConfig;
@@ -11,11 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * @author  aleksey.n.bykov@gmail.com
- * @version 1.0
- * @since   2019-05-10
- */
 @DisplayName("Testing the swapping elements in array, O(1)")
 @SpringBootTest(classes = {ArrayConfig.class, PerformanceWatcherConfig.class})
 public class SwappingElementsTest {

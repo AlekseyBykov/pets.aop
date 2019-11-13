@@ -5,5 +5,3 @@ Examples of the data structures and algorithms can be founded in the following b
 
 - "Data Structures & Algorithms in Java" by Robert Lafore
 - "Think Data Structures: Algorithms and Information Retrieval in Java" by Allen B. Downey
-
-Feel free to use these solutions in your work.

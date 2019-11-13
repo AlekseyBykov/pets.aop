@@ -1,17 +1,9 @@
-//
-// Feel free to use these solutions in your work.
-//
 package alekseybykov.portfolio.performance.testing.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 
-/**
- * @author  aleksey.n.bykov@gmail.com
- * @version 1.0
- * @since   2019-05-30
- */
 @Aspect
 public class PerformanceWatcher {
 
