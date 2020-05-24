@@ -10,7 +10,7 @@ import static java.lang.String.format;
 public class PerformanceAuditor {
 
 	/**
-	 * Performance tracing for all the methods marked with @Test.
+	 * Performance tracking for all the methods marked with @Test.
 	 * As JUnit tests are not Spring beans we need pure AspectJ and load-time weaver.
 	 */
 	@Around("execution(* *(..)) && @annotation(org.junit.Test)")
@@ -18,7 +18,7 @@ public class PerformanceAuditor {
 		long startTime = System.currentTimeMillis();
 		Object result = joinPoint.proceed();
 		long timeTaken = System.currentTimeMillis() - startTime;
-		System.out.println(format("Performance tracing: %s, %s ms", joinPoint, timeTaken));
+		System.out.println(format("Performance tracking: %s, %d ms", joinPoint, timeTaken));
 		return result;
 	}
 }
