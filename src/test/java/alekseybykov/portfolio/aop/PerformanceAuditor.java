@@ -6,6 +6,10 @@ import org.aspectj.lang.annotation.Aspect;
 
 import static java.lang.String.format;
 
+/**
+ * @author Aleksey Bykov
+ * @since 19.05.2020
+ */
 @Aspect
 public class PerformanceAuditor {
 
